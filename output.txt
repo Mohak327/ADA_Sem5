@@ -1,0 +1,1 @@
+Unsorted array is 2 7 1 5 3 Sorted array is 2 7 1 5 3 
