@@ -14,7 +14,7 @@ void insertionSort(vector<int> &arr, int n) {
 }
 
 int main() {
-	cout<<"\t\t\t\t\tInsertion Sort\n\n";
+	// cout<<"\t\t\t\t\tInsertion Sort\n\n";
 	int n;
 	cout<<"Enter number of elements in array: ";
 	cin >> n;
@@ -23,20 +23,20 @@ int main() {
 	for(int i=0;i<n;i++){
 		cin>>arr[i];
 	}
-	
+
 	cout << "\nUnsorted array is: ";
 	for(int i=0;i<n;i++){
 		cout<<arr[i]<<" ";
 	}
-	
+
 	insertionSort(arr, n);
 
 	cout << "\nSorted array is: ";
 	for(int i=0;i<n;i++){
 		cout<<arr[i]<<" ";
 	}
-	
-	cout<<"\n\nShubham Jindal\nCSE-A\n40";
+
+	// cout<<"\n\nShubham Jindal\nCSE-A\n40";
 
 	return 0;
 }

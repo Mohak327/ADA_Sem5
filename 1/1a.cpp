@@ -20,10 +20,10 @@ void bubbleSort(vector<int> &arr, int n) {
 int main() {
 	cout << "\t\t\t\t\t\t\tBubble Sort\n\n";
 	int n;
-	cout << "Enter number of elements in array: ";
+	cout << "\nEnter number of elements in array: ";
 	cin >> n;
 	vector<int> arr(n);
-	cout << "\nEnter the elements of array: ";
+	cout << "Enter the elements of array: ";
 	for (int i = 0; i < n; i++) {
 		cin >> arr[i];
 	}
