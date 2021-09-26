@@ -10,7 +10,7 @@ void mergeSort(vector<int> &arr, int n) {
 			j--;
 		}
 	}
-	return ;
+	return;
 }
 
 int main() {
