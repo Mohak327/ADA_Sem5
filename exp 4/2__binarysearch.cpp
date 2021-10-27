@@ -29,7 +29,7 @@ int main() {
     cout << "Enter the size of array: ";
     cin >> n;
     int *arr = new int[n];
-    cout << "Enter " << n*n << " elements in the array: ";
+    cout << "Enter " << n << " elements in the array: ";
 
     for (int i=0; i<n; i++)
         cin >> arr[i];
@@ -39,8 +39,10 @@ int main() {
     cin >> item;
 
     int pos = obj.binarysearch(arr, item, 0, n-1);
-    (pos == -1)
-        ? cout << "Element is not present in the array."
-        : cout << "Element "<< item <<" is present at position " << pos;
+
+    if(pos == -1)
+     {   cout << "Element is not present in the array.";}
+    else
+    {    cout << "Element "<< item <<" is present at position " << pos;}
     return 0;
 }
