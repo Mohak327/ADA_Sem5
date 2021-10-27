@@ -1,6 +1,8 @@
 // The longest common subsequence in C++
+// #include<bits/stdc++.h>
 
 #include <iostream>
+#include <string.h>
 using namespace std;
 
 void lcsAlgo(char *S1, char *S2, int m, int n) {
