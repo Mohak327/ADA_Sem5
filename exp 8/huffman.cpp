@@ -97,8 +97,7 @@ void insertMinHeap(struct MinH *minHeap, struct MinHNode *minHeapNode) {
     ++minHeap->size;
     int i = minHeap->size - 1;
 
-    while (i && minHeapNode->freq < minHeap->array[(i - 1) / 2]->freq)
-    {
+    while (i && minHeapNode->freq < minHeap->array[(i - 1) / 2]->freq) {
         minHeap->array[i] = minHeap->array[(i - 1) / 2];
         i = (i - 1) / 2;
     }
