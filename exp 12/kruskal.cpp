@@ -27,7 +27,7 @@ public:
 Graph::Graph(int V)
 {
     parent = new int[V];
-
+    weight = 0;
     // i 0 1 2 3 4 5
     // parent[i] 0 1 2 3 4 5
     for (int i = 0; i < V; i++)
@@ -79,9 +79,12 @@ void Graph::print()
     {
         cout << T[i].second.first << " - " << T[i].second.second << " : "
              << T[i].first;
+        weight += T[i].first;
         cout << endl;
     }
+    cout << "Weight of the MST is: "<<weight;
 }
+
 int main()
 {
     Graph g(6);
